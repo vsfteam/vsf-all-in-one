@@ -1,0 +1,42 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+
+# Compiled Static libraries
+*.lai
+*.la
+
+# Executables
+*.out
+*.app
+Makefile
+Makefile.*
+*.Debug
+*.Release
+*.rc
+
+debug
+release
+build*
+distwin/
+build/
+.vscode/
+.vscode*
+.settings/
+.autotools
+.vscode-ctags
+*.zip
+*.classpath
+*.project
+*.cproject
+*.settings
+
+*.pro.user
+vm.pro.user
+vm.pro.user.*
