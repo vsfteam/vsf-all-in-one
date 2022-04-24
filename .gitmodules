@@ -1,69 +1,15 @@
-[submodule "btstack"]
-	path = source/component/3rd-party/btstack/raw
-	url = ../btstack
-[submodule "coremark"]
-	path = source/component/3rd-party/coremark/raw
-	url = ../coremark
 [submodule "gato"]
 	path = source/component/3rd-party/gato/raw
 	url = ../Gato
-[submodule "freetype"]
-	path = source/component/3rd-party/freetype/raw
-	url = ../freetype
-[submodule "zlib"]
-	path = source/component/3rd-party/zlib/raw
-	url = ../zlib
 [submodule "nuklear"]
 	path = source/component/3rd-party/nuklear/raw
 	url = ../Nuklear
-[submodule "nnom"]
-	path = source/component/3rd-party/nnom/raw
-	url = ../nnom
-[submodule "lua"]
-	path = source/component/3rd-party/lua/raw
-	url = ../lua
-[submodule "lwip"]
-	path = source/component/3rd-party/lwip/raw
-	url = ../lwip
-[submodule "libpng"]
-	path = source/component/3rd-party/libpng/raw
-	url = ../libpng
-[submodule "libjpeg-turbo"]
-	path = source/component/3rd-party/libjpeg-turbo/raw
-	url = ../libjpeg-turbo
-[submodule "SDL_ttf"]
-	path = source/shell/media/sdl2/3rd-party/SDL_ttf
-	url = ../SDL_ttf
-[submodule "SDL_image"]
-	path = source/shell/media/sdl2/3rd-party/SDL_image
-	url = ../SDL_image
-[submodule "lv_lib_freetype"]
-	path = source/component/3rd-party/lvgl/extension/lv_lib_freetype/raw
-	url = ../lv_lib_freetype
-[submodule "lvgl"]
-	path = source/component/3rd-party/lvgl/raw/lvgl
-	url = ../lvgl
-[submodule "CMSIS"]
-	path = source/utilities/compiler/arm/3rd-party/CMSIS
-	url = ../CMSIS_5
 [submodule "evm"]
 	path = source/component/3rd-party/evm/raw
 	url = ../evm
 [submodule "source/component/3rd-party/LingLongGUI/raw"]
 	path = source/component/3rd-party/LingLongGUI/raw
 	url = ../LingLongGUI
-[submodule "source/utilities/3rd-party/PLOOC/raw"]
-	path = source/utilities/3rd-party/PLOOC/raw
-	url = ../PLOOC
-[submodule "source/component/3rd-party/mbedtls/raw"]
-	path = source/component/3rd-party/mbedtls/raw
-	url = ../mbedtls
 [submodule "source/component/3rd-party/GuiLite/raw"]
 	path = source/component/3rd-party/GuiLite/raw
 	url = ../GuiLite
-[submodule "source/hal/driver/AIC/AIC8800/vendor"]
-	path = source/hal/driver/AIC/AIC8800/vendor
-	url = ../AIC8800M_SDK_vsf
-[submodule "source/component/3rd-party/littlefs/raw"]
-	path = source/component/3rd-party/littlefs/raw
-	url = ../littlefs
