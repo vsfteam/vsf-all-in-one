@@ -22,11 +22,6 @@ extern "C" {
 #define utimes              VSF_LINUX_WRAPPER(utimes)
 #endif
 
-#ifndef __SUSECONDS_T
-#   define __SUSECONDS_T    long int
-#endif
-typedef __SUSECONDS_T       suseconds_t;
-
 enum {
     ITIMER_REAL     = 0,
     ITIMER_VIRTUAL  = 1,
@@ -34,19 +29,9 @@ enum {
     ITIMER_NUM      = 3,
 };
 
-struct timeval {
-    time_t          tv_sec;
-    suseconds_t     tv_usec;
-};
-
 struct timezone {
     int             tz_minuteswest;
     int             tz_dsttime;
-};
-
-struct itimerval {
-    struct timeval  it_value;
-    struct timeval  it_interval;
 };
 
 #if VSF_LINUX_APPLET_USE_SYS_TIME == ENABLED

@@ -52,6 +52,21 @@ struct tm {
     const char *tm_zone;
 };
 
+#ifndef __SUSECONDS_T
+#   define __SUSECONDS_T    long int
+#endif
+typedef __SUSECONDS_T       suseconds_t;
+
+struct timeval {
+    time_t          tv_sec;
+    suseconds_t     tv_usec;
+};
+
+struct itimerval {
+    struct timeval  it_value;
+    struct timeval  it_interval;
+};
+
 struct timespec {
     time_t          tv_sec;
     long            tv_nsec;
