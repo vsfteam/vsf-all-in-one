@@ -1,0 +1,20 @@
+ src/gzip/ftzconf.h | 6 ++++++
+ 1 file changed, 6 insertions(+)
+
+diff --git a/src/gzip/ftzconf.h b/src/gzip/ftzconf.h
+index 3abf0ba03..5bd23a024 100644
+--- a/src/gzip/ftzconf.h
++++ b/src/gzip/ftzconf.h
+@@ -8,6 +8,12 @@
+ #ifndef _ZCONF_H
+ #define _ZCONF_H
+ 
++#ifdef __VSF__
++#   ifdef __WIN__
++#       undef _MSC_VER
++#   endif
++#endif
++
+ /*
+  * If you *really* need a unique prefix for all types and library functions,
+  * compile with -DZ_PREFIX. The "standard" zlib should be compiled without it.
