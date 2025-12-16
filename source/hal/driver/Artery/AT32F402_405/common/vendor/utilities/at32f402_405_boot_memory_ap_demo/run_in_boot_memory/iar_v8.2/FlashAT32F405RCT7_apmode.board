@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<flash_board>
+  <pass>
+    <loader>$TOOLKIT_DIR$\config\flashloader\ArteryTek\AT32F405\AT32F405RCT7\FlashAT32F405RCT7.flash</loader>
+    <flash_base>0x08000000</flash_base>
+    <range>CODE 0x08000000 0x803FFFF</range>
+  </pass>
+  <pass>
+    <loader>$TOOLKIT_DIR$\config\flashloader\ArteryTek\AT32F405\AT32F405_BOOTMEM_AP\FlashAT32F405_BOOTMEM_AP.flash</loader>
+    <range>CODE 0x1fffa400 0x1ffff3ff</range>
+  </pass>
+</flash_board>
+
+
