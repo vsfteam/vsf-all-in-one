@@ -1,0 +1,19 @@
+ lua.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+
+diff --git a/lua.c b/lua.c
+index b5b884b6..71bc94e3 100644
+--- a/lua.c
++++ b/lua.c
+@@ -620,7 +620,11 @@ static int pmain (lua_State *L) {
+ }
+ 
+ 
++#ifdef __VSF__
++int lua_main (int argc, char **argv) {
++#else
+ int main (int argc, char **argv) {
++#endif
+   int status, result;
+   lua_State *L = luaL_newstate();  /* create state */
+   if (L == NULL) {
