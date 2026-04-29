@@ -18,6 +18,25 @@
 #if VSF_HAL_USE_RTC == ENABLED
 
 /*============================ INCLUDES ======================================*/
+
+/* The four *_API_TEMPLATE branches below synthesize get/set helpers on top of
+ * libc <time.h> (struct tm / time_t / gmtime / mktime). Include the header
+ * here instead of relying on the driver to do it indirectly, and guard the
+ * width assumption between time_t and vsf_rtc_time_t (uint64_t).
+ *
+ * If the target platform exposes a narrower, signed time_t (e.g. int32_t),
+ * values past 2038-01-19 will sign-extend into vsf_rtc_time_t; drivers that
+ * need to handle Y2K38 should reimplement get_time/set_time rather than use
+ * these template branches.
+ */
+#if    (VSF_RTC_CFG_GET_API_TEMPLATE      == ENABLED)                          \
+    || (VSF_RTC_CFG_SET_API_TEMPLATE      == ENABLED)                          \
+    || (VSF_RTC_CFG_GET_TIME_API_TEMPLATE == ENABLED)                          \
+    || (VSF_RTC_CFG_SET_TIME_API_TEMPLATE == ENABLED)
+#   include <time.h>
+VSF_STATIC_ASSERT(sizeof(time_t) <= sizeof(vsf_rtc_time_t));
+#endif
+
 /*============================ MACROS ========================================*/
 
 #if VSF_RTC_CFG_GET_API_TEMPLATE == ENABLED && VSF_RTC_CFG_GET_TIME_API_TEMPLATE == ENABLED
@@ -165,7 +184,11 @@ vsf_err_t vsf_real_rtc_get_time(vsf_real_rtc_t *rtc_ptr, vsf_rtc_time_t *second_
             .tm_mon  = rtc_tm.tm_mon - 1,
             .tm_year = rtc_tm.tm_year - 1900,
         };
-        *second_ptr = mktime(&t);
+        /* Explicit integer conversion: mktime() returns time_t, which may be
+         * narrower and/or of different signedness than vsf_rtc_time_t. Go
+         * through a local time_t to make the widening explicit. */
+        time_t sec_t = mktime(&t);
+        *second_ptr = (vsf_rtc_time_t)sec_t;
     }
 
     if (milliseconds_ptr != NULL) {
@@ -181,7 +204,11 @@ vsf_err_t vsf_real_rtc_set_time(vsf_real_rtc_t *rtc_ptr, vsf_rtc_time_t second, 
 {
     VSF_HAL_ASSERT(rtc_ptr != NULL);
 
-    struct tm *t = gmtime((const time_t *)&second);
+    /* Use a local time_t instead of reinterpret-casting &second: time_t may
+     * be narrower than vsf_rtc_time_t, and gmtime() would otherwise read
+     * sizeof(time_t) bytes from a possibly wider storage. */
+    time_t sec_t = (time_t)second;
+    struct tm *t = gmtime(&sec_t);
     if (NULL == t) {
         return VSF_ERR_FAIL;
     }
