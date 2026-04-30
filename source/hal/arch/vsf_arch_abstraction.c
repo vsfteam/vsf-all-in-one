@@ -1032,6 +1032,12 @@ vsf_systimer_tick_t vsf_systimer_get(void)
     return cur_tick;
 }
 
+VSF_CAL_WEAK(vsf_systimer_is_due)
+bool vsf_systimer_is_due(vsf_systimer_tick_t due)
+{
+    return ((vsf_systimer_tick_signed_t)(vsf_systimer_get() - due) >= 0);
+}
+
 #endif
 
 /*----------------------------------------------------------------------------*
