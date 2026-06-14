@@ -1,0 +1,21 @@
+ pngpriv.h | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+diff --git a/pngpriv.h b/pngpriv.h
+index 583c26f9b..0f3fb18d5 100644
+--- a/pngpriv.h
++++ b/pngpriv.h
+@@ -39,6 +39,13 @@
+ # define _POSIX_SOURCE 1 /* Just the POSIX 1003.1 and C89 APIs */
+ #endif
+ 
++#ifdef __VSF__
++#   ifdef __WIN__
++#       undef _WIN32
++#       undef WIN32
++#   endif
++#endif
++
+ #ifndef PNG_VERSION_INFO_ONLY
+ /* Standard library headers not required by png.h: */
+ #  include <stdlib.h>
