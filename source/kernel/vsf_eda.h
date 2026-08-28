@@ -1875,6 +1875,19 @@ vsf_class(vsf_eda_t) {
         uint8_t                 cur_priority;
         uint8_t                 new_priority;
         uint8_t                 priority;
+        /*! \note is_ready is written by __vsf_evtq_post(), which may run in
+         *!       hard-IRQ context, so EVERY access to it MUST be protected by
+         *!       vsf_protect_int(); scheduler-level protection does NOT
+         *!       exclude hard IRQs. It MUST stay in its own byte and MUST NOT
+         *!       be moved back into __vsf_eda_state_t: bitfields in that byte
+         *!       are read-modify-written by kernel code, and a hard IRQ
+         *!       preempting such an RMW once clobbered an IRQ-set is_ready,
+         *!       making the next post double-enqueue the eda into rdy_list
+         *!       (list cycle, full system freeze on YC1615). Future
+         *!       IRQ-shared flags MUST be added here, never to
+         *!       __vsf_eda_state_t.
+         */
+        bool                    is_ready;
 #       else
         uint8_t                 evt_cnt;
         uint8_t                 priority;
