@@ -1,0 +1,26 @@
+language: c
+
+os: linux
+dist: trusty
+
+before_install: tools/apt-get-install-deps.sh
+script: make run_test $OPT
+
+matrix:
+  include:
+    - name: "Check"
+      before_install: skip
+      script: tools/check-signed-off.sh --travis
+
+    - name: "x86-64 Debug"
+      env:
+        - OPT="TUV_BUILD_TYPE=debug"
+
+    - name: "x86-64 Release"
+      env:
+        - OPT="TUV_BUILD_TYPE=release"
+
+    - name: "ARM RPi2"
+      env:
+        - OPT="TUV_PLATFORM=arm-linux TUV_BOARD=rpi2"
+      install: tools/apt-get-install-arm.sh
