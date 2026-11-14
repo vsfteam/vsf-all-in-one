@@ -33,6 +33,16 @@
 #   define VSF_AUDIO_CFG_EDA_PRIORITY               vsf_prio_0
 #endif
 
+// ticktock adapter event dispatch mode: ENABLED = the adapter handler runs
+// synchronously in the stream-event context (immediate refill/zero-fill);
+// DISABLED = events queue via vsf_eda_post_evt to the adapter EDA (deferred,
+// keeps the handler off the caller's pre-emption context). Deferred refill
+// may not keep up with large audio blocks and the DMA ring underruns, so
+// large-block users should set ENABLED.
+#ifndef VSF_AUDIO_CFG_TICKTOCK_STREAM_ADAPTER_DIRECT
+#   define VSF_AUDIO_CFG_TICKTOCK_STREAM_ADAPTER_DIRECT   DISABLED
+#endif
+
 /*============================ MACROFIED FUNCTIONS ===========================*/
 /*============================ TYPES =========================================*/
 /*============================ GLOBAL VARIABLES ==============================*/
