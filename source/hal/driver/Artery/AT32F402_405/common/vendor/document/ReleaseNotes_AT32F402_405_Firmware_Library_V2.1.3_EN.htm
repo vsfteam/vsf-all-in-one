@@ -1,0 +1,986 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=gb2312">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:宋体;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Poppins-Medium;
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@宋体";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"页眉 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:center;
+	layout-grid-mode:char;
+	border:none;
+	padding:0cm;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-link:"页脚 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	layout-grid-mode:char;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-link:"批注框文本 字符";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:9.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin:0cm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	text-indent:21.0pt;
+	font-size:10.5pt;
+	font-family:"Calibri",sans-serif;}
+span.a
+	{mso-style-name:"批注框文本 字符";
+	mso-style-link:批注框文本;}
+span.a0
+	{mso-style-name:"页眉 字符";
+	mso-style-link:页眉;}
+span.a1
+	{mso-style-name:"页脚 字符";
+	mso-style-link:页脚;}
+p.Default, li.Default, div.Default
+	{mso-style-name:Default;
+	margin:0cm;
+	margin-bottom:.0001pt;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Calibri",sans-serif;
+	color:black;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 90.0pt 72.0pt 90.0pt;
+	layout-grid:15.6pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=ZH-CN style='text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:15.6pt'>
+
+<p class=MsoNormal align=center style='text-align:center'><b><i><span
+lang=EN-US style='font-size:16.0pt;font-family:"Arial",sans-serif;color:#0070C0'>Release
+Notes for </span></i></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b><i><span
+lang=EN-US style='font-size:16.0pt;font-family:"Arial",sans-serif;color:#0070C0'>AT32F402_405
+Firmware Library</span></i></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-family:"Arial",sans-serif;
+color:#7030A0'>V2.1.3-2025/06/25</span></b></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>CMSIS</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>device_support</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+the “reduce_power_consumption()” function in <i>system_at32f402_405.c</i> and
+improved power consumption control process.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Drivers</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>CRM</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Modified bit
+field “adc14rst” to “tmr14rst”.</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>CAN</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Modified definitions
+of some register bit fields, with 14 filter banks only, and deleted redundant
+definitions.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Middlewares</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>USB</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated keyboard
+class, added “send_state” member to the “keyboard_type” structure to record
+transmit status, and updated the “usb_keyboard_class_send_report” function for
+flow control processing in transmit to avoid data error. </span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Demos</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>USB</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Adjusted
+the Deepsleep mode entry method (extra low-power mode) and configuration
+process in keyboard demo, and updated the delay of stabilization after wakeup.</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Adjusted
+the Deepsleep mode entry method (extra low-power mode) and configuration
+process in mouse demo, and updated the delay of stabilization after wakeup.</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+the value of “USB_FLASH_ADDR_OFFSET” in msc from 0x08005000 to 0x08008000 to
+avoid compilation range overflow in different environments.</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>templates</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+the include path in eclipse_gcc to avoid compilation error caused by workspace_project_locations
+parameter error while importing</span><span lang=EN-US style='font-family:"Poppins-Medium",serif;
+color:black;background:white'> </span><span lang=EN-US style='font-family:"Arial",sans-serif'>multiple
+projects. </span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Board</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Revised
+the writing of some parameter variables in board.c to avoid warning message in
+the new version of compiler.</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Cortex-m4</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+the delay judgment in systick_interrupt (modified “&gt;” to be “&gt;=”) to avoid
+the extra 1ms of IO toggling.</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Keil project</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated IROM
+size settings for some Keil projects.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+some notes.</span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-family:"Arial",sans-serif;
+color:#7030A0'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-family:"Arial",sans-serif;
+color:#7030A0'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-family:"Arial",sans-serif;
+color:#7030A0'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='page-break-before:always'><b><span lang=EN-US
+style='font-family:"Arial",sans-serif;color:#7030A0'>V2.1.2-2025/01/20</span></b></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Drivers</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>PWC</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated LDO
+output level settings, and removed LDO configuration option “PWC_LDO_OUTPUT_1V0”.</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>TMR</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated “tmr_brk_filter_value_set()”
+function, and modified bit field “bkf” to “brkf”.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Middlewares</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>USB</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+“usbh_hch_in_handler()” function in host mode, and channels are disabled during
+interrupt transfer and synchronous transfer when NAK occurs.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Demos</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>IAP</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated IAP_Programmer.exe.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+some notes.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-family:"Arial",sans-serif;
+color:#7030A0'>V2.1.1-2024/12/13</span></b></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>CMSIS</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>DSP</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated DSP
+source code library.</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated <i>at32f402_405.h</i>,
+and corrected the encapsulated macro definitions (AT32F405Cx and AT32F402Cx).</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+“system_core_clock_update()” function in <i>system_at32f402_405.c</i>, and
+fixed the error caused by calculation value overflow.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Drivers</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>CAN</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Revised “can_transmit_cancel()”
+function writing to avoid cross-mailbox interference due to misoperation.</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>USB</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+“usb_hch_halt()” function in host mode and improved channel halt processing
+flow. </span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+“usb_hc_enable()” function in host mode to ensure that its original state is
+cleared</span><span lang=EN-US style='font-family:"Arial",sans-serif;
+color:black;background:white'> when </span><span lang=EN-US style='font-family:
+"Arial",sans-serif'>enabling the corresponding channel.</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+“usb_host_disable()” function in host mode, and updated process of disabling
+channels to avoid inadvertently&nbsp;opening the remaining channels.</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>SPI</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+frequency calculation method in the “i2s_init()” function, and fixed the error
+caused by calculation value overflow.</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt;
+page-break-before:always'><span lang=EN-US style='font-family:Wingdings'>l<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span lang=EN-US
+style='font-family:"Arial",sans-serif'>ERTC</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated “ertc_wakeup_enable()”
+function, and corrected the use of parameters.</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated “ertc_wait_update()”
+function, and standardized how this function is written&nbsp;to work across all
+series.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Middlewares</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>USB</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated “usbd_reset_handler()”
+function, and changed endpoint status to NAK on USB RESET.</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Added “usbd_ept_in_check_fifo()”
+function to check the current endpoint status and FIFO when transmitting data
+through USB.</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated <i>mouse_class.c</i>
+and<i> custom_hid_class.c</i>, and added the process of checking whether the
+previous packet has been transferred completely when sending hid/mouse data.</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+“usbd_set_configuration()” function in device mode, and modified the USB set
+configuration judgement logic.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Demos</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>I2C</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Added memory_write
+demo.</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated eeprom,
+and added multi-page write logic.</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>PWC</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+the delay mechanism after waking up from Deepsleep mode in all PWC related
+demos to ensure stability.</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>SPI</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+the structure and framework&nbsp;of all SPI demo codes, removed “usb_jtagpin_hardwarecs_dma”
+and added “fullduplex_dma”.</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>QSPI</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+QSPI interface configuration process (disabled cache) in “xip_port_read_write_sram”.</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Utilities</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Added
+support for AT32IDE project in SLIB demo.</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+bootloader jump address variables in usb_iap, and changed local variables to
+global variables to ensure that the jump address is not affected as much as
+possible. </span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+some notes.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='page-break-before:always'><b><span lang=EN-US
+style='font-family:"Arial",sans-serif;color:#7030A0'>V2.1.0-2024/08/08</span></b></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Drivers</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>QSPI</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Revised “qspi_flag_clear()”
+function writing, and fixed AC6 compilation problems.</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>USB</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+“usb_hc_enable()” function in host mode, and fixed the enumeration issue of
+some devices. </span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+“usb_host_disable()” function in host mode, and fixed the issue
+that&nbsp;channels might not close properly in DMA mode.</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Revised
+parameters in “usb_read_packet()” function, and fixed AC6 compilation problems.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Middlewares</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>USB</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+“usbh_hch_in_handler()” function in host mode, without re-enabling channels
+during interrupt transfer. </span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated “uhost_process_handler()”
+function in host mode, and improved polling process.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Demos</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Cortex-m4</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Modified
+IROM base address and size settings of Keil project in cmsis_dsp.</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>I2C</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Modified
+“GPIO_PULL_UP” to “GPIO_PULL_NONE” in I<sup>2</sup>C GPIO initialization to
+enhance the adaptability of external circuits.</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Modified
+DMA channel configuration sequence in “communication_dma” to prevent illegal
+pointer access.</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>SPI</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+pin configurations in w25q_flash to better match the AT32-Comm-EV board.</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>USB</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Modified write
+handling of <i>flash_fat16.c</i> file in virtual_msc_iap to enhance
+compatibility.</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>QSPI</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+QSPI interface initialization and writing in all QSPI demos. </span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Utilities</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Modified
+RAM size in IAR project link file of slib_demo/project_l1.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+some notes.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-family:"Arial",sans-serif;
+color:#7030A0'>V2.0.9-2024/05/10</span></b></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Drivers</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>USART</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated “usart_init()”
+function and revised UART7/UART8 clock source.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='page-break-before:always'><b><span lang=EN-US
+style='font-family:"Arial",sans-serif;color:#7030A0'>V2.0.8-2024/04/30</span></b></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>CMSIS</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>device_support</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Added
+“reduce_power_consumption()” function in system_at32f402_405.c for use in low
+power consumption control of at32f402.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Drivers</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>QSPI</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Revised
+FIFO depth definition from “QSPI_DMA_FIFO_THOD_WORD32” to “QSPI_DMA_FIFO_THOD_WORD24”.</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>SCFG</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Adjusted
+the type of return value of “scfg_sram_operr_status_get()” function from “error_status”
+to “flag_status”.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Demos</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>ALL at32f402
+demos</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated <i>at32f402_405_clock.c</i>
+file; call the “reduce_power_consumption()” function after the system clock is
+initialized.</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>SRAM</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated “sram_parity_check”
+initialization process.</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated “sram_parity_error_lock_enable”
+initialization process.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-family:"Arial",sans-serif;
+color:#7030A0'>V2.0.7-2024/04/08</span></b></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Drivers</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>QSPI</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Added “qspi_auto_ispc_enable()”
+function for bus input clock phase matching.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Middlewares</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>USB</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Revised
+STALL state assignment method in “usbh_hch_out_handler()” function.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Demos</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>QSPI</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+all demos, and added “qspi_auto_ispc_enable()” function in initialization
+process. </span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>USB_DEVICE</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+USB low-power mode wakeup configuration and process to enhance system stability
+when entering/existing low-power mode.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='page-break-before:always'><b><span lang=EN-US
+style='font-family:"Arial",sans-serif;color:#7030A0'>V2.0.6-2024/03/01</span></b></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Demos</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>QSPI</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Added “run_in_qspi_flash”
+demo.</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Added all
+<i>qspi_cmd_esmt32m.c</i> files, and removed unused “user_func_check_timeout()”
+function.</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Utilities</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Added qspi_algorithm_demo.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-family:"Arial",sans-serif;
+color:#7030A0'>V2.0.5-2024/02/01</span></b></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Demos</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>USB_DEVICE</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Fixed the
+error caused by removing “PWC_REGULATOR_LOW_POWER” in mouse and keyboard demos.
+</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-family:"Arial",sans-serif;
+color:#7030A0'>V2.0.4-2024/01/26</span></b></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>CMSIS</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>device_support</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Adjusted
+SRAM size in link files in gcc and IAR environment.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Drivers</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>PWC</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated “pwc_voltage_regulate_set()”
+function and removed “PWC_REGULATOR_LOW_POWER” setting.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Middlewares</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>USB</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated the
+type of “usbd_core_type” structure members to ensure 4-byte-alignment of “default_config”
+and “dev_config” addresses.</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated “custom
+hid report” and “audio hid report” descriptors.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Demos</span></p>
+
+<p class=MsoListParagraph style='margin-left:42.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>l<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>ALL Keil
+projects</span></p>
+
+<p class=MsoListParagraph style='margin-left:63.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:Wingdings'>w<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+SRAM size configuration in all Keil projects.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+some notes.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-family:"Arial",sans-serif;
+color:#7030A0'>V2.0.3-2024/01/05</span></b></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated timer
+input_capture demo counting method.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Fixed HID
+low-speed identification problems in USB demo.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+systick initialization function in systick interrupt demo.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Added winusb
+demo.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Added ADC
+loop_transfer demo.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+the method to call “xx_interrupt_flag_get()” function in all demos.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal style='page-break-before:always'><b><span lang=EN-US
+style='font-family:"Arial",sans-serif;color:#7030A0'>V2.0.2-2023/10/28</span></b></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+GPIO configuration in QSPI demo.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated USB
+drivers.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+some notes.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-family:"Arial",sans-serif;
+color:#7030A0'>V2.0.1-2023/09/28</span></b></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated
+the calculation process of the “system_core_clock” global variable.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Added
+dual OTG device and dual OTG host demo for AT32F405.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Revised
+SRAM size configuration in Keil project.</span></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Updated USB
+keyboard and mouse descriptor drivers.</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"Arial",sans-serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN-US style='font-family:"Arial",sans-serif;
+color:#7030A0'>V2.0.0-2023/08/18</span></b></p>
+
+<p class=MsoListParagraph style='margin-left:21.0pt;text-indent:-21.0pt'><span
+lang=EN-US style='font-family:"Arial",sans-serif'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span lang=EN-US style='font-family:"Arial",sans-serif'>Initial
+release of AT32F402 and AT32F405 series firmware library.</span></p>
+
+</div>
+
+</body>
+
+</html>
